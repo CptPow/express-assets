@@ -1,0 +1,7 @@
+::ffff:127.0.0.1 - - [03/Dec/2023:19:21:46 +0000] "GET /page1 HTTP/1.1" 404 144 "-" "curl/7.88.1"
+::ffff:127.0.0.1 - - [03/Dec/2023:19:21:54 +0000] "GET /page/1 HTTP/1.1" 200 261 "-" "curl/7.88.1"
+::ffff:127.0.0.1 - - [03/Dec/2023:19:22:56 +0000] "GET /page/3 HTTP/1.1" 200 238 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0"
+::ffff:127.0.0.1 - - [03/Dec/2023:19:23:00 +0000] "GET /page/2 HTTP/1.1" 200 278 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0"
+::ffff:127.0.0.1 - - [03/Dec/2023:19:23:00 +0000] "GET /css/style.css HTTP/1.1" 200 54 "http://localhost:3000/page/2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0"
+::ffff:127.0.0.1 - - [03/Dec/2023:19:23:03 +0000] "GET /page/1 HTTP/1.1" 200 261 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0"
+::ffff:127.0.0.1 - - [03/Dec/2023:19:23:03 +0000] "GET /img/mountains.jpg HTTP/1.1" 200 67245 "http://localhost:3000/page/1" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0"
