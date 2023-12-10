@@ -5,7 +5,7 @@ const app = express();
 const path = require("path");
 const PORT = 3000;
 
-app.use(express.json());
+app.use("/api",express.json());
 
 //creo dataLog e morgan
 var dataLog = fs.createWriteStream(path.join(__dirname, "data.log"), {flags: "a"})
@@ -21,3 +21,14 @@ app.use(express.static(path.join(__dirname, "public")));
 app.listen(PORT, () => {
     console.log(`Server in ascolto su porta ${PORT}`);
 });
+
+app.get("/api", (req, res) => {
+    console.log(req.body);
+    return res.json(
+       "Simone",
+    );
+  });
+
+  app.get("/404", (req, res) => {
+    return res.sendFile(path.resolve("public", "views", "_404.html"));
+  })
